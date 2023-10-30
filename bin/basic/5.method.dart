@@ -45,8 +45,9 @@ String ooo(String x, {String o = '000'}) {
   return "x=>$x o=>$o";
 }
 
+/// 不管有沒有 return，回傳值都可省略
+/// 但寫了回傳值，就一定要回傳指定的型態
 noVoid() {
-  // 回傳值可省略
   print("no void");
 }
 
