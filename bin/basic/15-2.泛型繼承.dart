@@ -4,6 +4,7 @@ main() {
   Other<Son>();
 }
 
+/// 沒有 T super Xxx
 class Other<T extends Papa> {}
 
 class Papa {}
