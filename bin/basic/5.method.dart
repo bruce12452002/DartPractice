@@ -34,9 +34,9 @@ void main() {
   }
 
   print("回傳多個值");
-  int aaa;
-  String? bbb;
-  (aaa, bbb) = oooo();
+  // int aaa;
+  // String? bbb;
+  var (aaa, bbb) = oooo();
   print("$aaa $bbb ${aaa.runtimeType} ${bbb.runtimeType}");
 }
 

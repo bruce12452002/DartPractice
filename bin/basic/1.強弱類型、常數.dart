@@ -19,6 +19,13 @@ void main(List<String> args) {
   Symbols
   */
 
+  /* 賦多個值 */
+  // 用方括或圓括都可以
+  // var i, j;
+  var (i, j) = ('x', "o");
+  // [i, j] = ['x', "o"];
+  print("$i $j");
+
   /* 弱類型：自動判別是什麼類型 */
   // var 宣告時就賦值時，不能修改成其他類型
   var i1 = 'x';
@@ -65,7 +72,6 @@ void main(List<String> args) {
 
   print("======== is =======");
   print(abc is int);
-
 
   print("======== const 和 final =======");
   /* const 和 final */
