@@ -78,4 +78,15 @@ main() {
   // 如果使用 of 會有更好的效能
   List ll1 = List.from(myList2);
   List ll2 = List.of(myList2);
+
+  print('======== reduce ========');
+  final myListA = <int>[1, 2, 3, 4, 5];
+  print(myListA.reduce((v, e) => v + e));
+
+  print('======== ford ========');
+  // 和 reduce 一樣，但第一個參數可以給一個初始值
+  final myListB = <int>[1, 2, 3, 4, 5];
+  var result2 =
+      myListB.fold(100, (previousValue, element) => previousValue + element);
+  print(result2);
 }
