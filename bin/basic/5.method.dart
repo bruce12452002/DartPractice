@@ -32,6 +32,12 @@ void main() {
   for (int i = 0; i < 5; i++) {
     c();
   }
+
+  print("回傳多個值");
+  int aaa;
+  String? bbb;
+  (aaa, bbb) = oooo();
+  print("$aaa $bbb ${aaa.runtimeType} ${bbb.runtimeType}");
 }
 
 /* 沒有 overloading 方法 */
@@ -55,7 +61,7 @@ get(fn) {
   fn();
 }
 
-/* 
+/*
   閉包：函數裡有函數，內部函數調用外部函數的變數，變數不會被系統回收，
   使得記憶體無法釋放
 
@@ -64,4 +70,8 @@ get(fn) {
 Function closure() {
   int i = 0;
   return () => print(i++);
+}
+
+oooo() {
+  return (1, "s");
 }
