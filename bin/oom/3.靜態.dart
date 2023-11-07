@@ -1,5 +1,6 @@
 void main() {
-  // 和 java 的觀念一樣
+  // 大部分和 java 的觀念一樣
+  // 但建構子可以調用靜態屬性
   print(StaticTest.sToS());
   StaticTest._a = 3;
   print(StaticTest.sToS());
